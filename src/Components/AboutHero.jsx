@@ -1,8 +1,8 @@
-// src/components/AboutHero.jsx
+// src/components/OverviewHero.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaTools, FaShieldAlt, FaArrowRight } from "react-icons/fa";
-import bg from "../assets/images/about-hero.avif"; // Ensure image exists
+import { FaUsers, FaShieldAlt, FaArrowRight } from "react-icons/fa";
+import bg from "../assets/images/about-hero.avif";
 
 const COLORS = {
   primary: "#39B54A",       // Nassa Green
@@ -17,7 +17,7 @@ const COLORS = {
   shadow: "#00000033",
 };
 
-const AboutHero = () => {
+const OverviewHero = () => {
   return (
     <section
       className="relative h-[70vh] w-full bg-center bg-cover flex items-center justify-center"
@@ -30,14 +30,15 @@ const AboutHero = () => {
 
       {/* Content */}
       <div className="z-10 text-center px-4 sm:px-6 md:px-8 max-w-4xl">
+        
         {/* Heading */}
         <h1
           className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-snug"
           style={{ color: COLORS.light }}
         >
-          About{" "}
+          Overview &{" "}
           <span style={{ color: COLORS.primary }}>
-            Nassa Elevators
+            Corporate Culture
           </span>
         </h1>
 
@@ -46,24 +47,24 @@ const AboutHero = () => {
           className="mt-4 text-sm sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
           style={{ color: COLORS.soft }}
         >
-          Established in 1984, Nassa Elevators is a trusted name in elevator and
-          escalator solutions, delivering safe, energy-efficient, and
-          future-ready mobility systems across residential, commercial, and
-          government infrastructure projects throughout India.
+          Since 1984, Nassa Elevators has grown into a trusted leader in vertical
+          mobility solutions by fostering a culture built on integrity, safety,
+          innovation, and respect for people. Our corporate culture drives every
+          decision — from engineering excellence to long-term partnerships.
         </p>
 
         {/* Feature Highlights */}
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-8 text-sm">
           <div className="flex items-center gap-2">
-            <FaShieldAlt className="text-xl" style={{ color: COLORS.primary }} />
+            <FaUsers className="text-xl" style={{ color: COLORS.primary }} />
             <span className="font-medium text-white">
-              Safety-Driven Engineering
+              People-First Culture
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <FaTools className="text-xl" style={{ color: COLORS.primary }} />
+            <FaShieldAlt className="text-xl" style={{ color: COLORS.primary }} />
             <span className="font-medium text-white">
-              End-to-End Maintenance
+              Ethics, Safety & Responsibility
             </span>
           </div>
         </div>
@@ -71,7 +72,7 @@ const AboutHero = () => {
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            to="/showcase"
+            to="/about/insights"
             className="px-6 py-3 text-sm sm:text-base font-semibold rounded-lg shadow-md flex items-center gap-2 transition"
             style={{
               backgroundColor: COLORS.primary,
@@ -85,11 +86,11 @@ const AboutHero = () => {
               (e.currentTarget.style.backgroundColor = COLORS.primary)
             }
           >
-            View Our Solutions <FaArrowRight />
+            Explore Our Values <FaArrowRight />
           </Link>
 
           <Link
-            to="/contact"
+            to="/about/management-address"
             className="px-6 py-3 text-sm sm:text-base font-semibold rounded-lg shadow-md flex items-center gap-2 transition border"
             style={{
               borderColor: COLORS.light,
@@ -105,7 +106,7 @@ const AboutHero = () => {
               e.currentTarget.style.color = COLORS.light;
             }}
           >
-            Contact Us <FaArrowRight />
+            Leadership Message <FaArrowRight />
           </Link>
         </div>
       </div>
@@ -113,4 +114,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default OverviewHero;

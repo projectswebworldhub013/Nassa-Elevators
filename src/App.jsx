@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import About from "./Pages/Overview";
 import Overview from "./Pages/Overview";
 import Support from "./Pages/Support";
+import MileStones from "./Pages/MileStones";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about/overview-culture" element={<Overview/>}/>
         <Route path="/about/supported-initiative" element={<Support/>}/>
+        <Route path="/about/milestones" element={<MileStones/>}/>
       </Routes>
     <Footer/>
     </>

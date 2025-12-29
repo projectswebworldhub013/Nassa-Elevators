@@ -1,11 +1,12 @@
 import React from 'react'
 import OverviewCorporate from '../Components/OverviewCorporate'
 import AboutHero from '../Components/AboutHero'
+import OverviewHero from '../Components/AboutHero'
 
 const Overview = () => {
   return (
     <div>
-      <AboutHero/>
+      <OverviewHero/>
       <OverviewCorporate/>
     </div>
   )

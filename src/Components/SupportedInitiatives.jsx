@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaLeaf, FaHandsHelping } from "react-icons/fa";
 
 import mainImage from "../assets/images/about1.jpg"; // main image
-import img1 from "../assets/images/s5.jpg";
-import img2 from "../assets/images/s5.jpg";
-import img3 from "../assets/images/s5.jpg";
-import img4 from "../assets/images/s5.jpg";
+import img1 from "../assets/images/one.webp";
+import img2 from "../assets/images/two.webp";
+import img3 from "../assets/images/three.webp";
+import img4 from "../assets/images/four.webp";
 
 /* ================= ANIMATIONS ================= */
 
@@ -23,27 +24,11 @@ export default function SupportedInitiatives() {
   return (
     <section className="relative bg-[#F7FAF8] py-16 px-6 md:px-12 overflow-hidden">
 
-      {/* ================= SUBTLE GRID BACKGROUND ================= */}
-      <svg
-        className="absolute inset-0 w-full h-full opacity-[0.25]"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-            <path
-              d="M 42 0 L 0 0 0 42"
-              fill="none"
-              stroke="#E3EFE7"
-              strokeWidth="1"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
+      
 
       {/* ================= MAIN CONTENT ================= */}
       <motion.div
-        className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center"
+        className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -55,12 +40,12 @@ export default function SupportedInitiatives() {
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
-          className="relative rounded-3xl overflow-hidden shadow-xl border border-[#E3EFE7]"
+          className=" rounded-3xl overflow-hidden shadow-xl border border-[#E3EFE7]"
         >
           <img
             src={mainImage}
             alt="Nassa Elevators CSR Initiatives"
-            className="w-full h-[520px] object-cover"
+            className="w-full hidden md:flex  h-[620px] object-cover"
           />
 
           {/* Overlay */}
@@ -78,67 +63,101 @@ export default function SupportedInitiatives() {
         </motion.div>
 
         {/* ================= RIGHT CONTENT ================= */}
-        <div className="text-center lg:text-left">
+<div className="text-center lg:text-left relative">
 
-          <p className="text-[#39B54A] uppercase tracking-widest text-sm mb-4 font-semibold">
-            Supported Initiatives
-          </p>
+  {/* Section Label */}
+  <div className="flex items-center justify-center lg:justify-start gap-3 mb-5">
+    <span className="w-10 h-[2px] bg-[#8EE6A1]" />
+    <p className="text-[#39B54A] uppercase tracking-widest text-xs font-semibold">
+      Supported Initiatives
+    </p>
+  </div>
 
-          <h2 className="text-4xl md:text-5xl font-light leading-tight text-[#1F2933]">
-            Responsibility Beyond
-            <br />
-            <span className="text-[#1F7A36] font-medium">
-              Vertical Mobility
-            </span>
-          </h2>
+  {/* Heading */}
+  <h2 className="text-4xl md:text-5xl font-light leading-tight text-[#1F2933]">
+    Responsibility Beyond
+    <br />
+    <span className="text-[#1F7A36] font-medium">
+      Vertical Mobility
+    </span>
+  </h2>
 
-          <p className="mt-6 text-[#6B7280] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Corporate Social Responsibility and the principle of giving back to
-            society are fundamental to{" "}
-            <span className="font-semibold text-[#1F7A36]">
-              Nassa Elevators’ culture and core values
-            </span>
-            . These values reflect our commitment to social and environmental
-            sustainability for our clients, employees, and communities.
-          </p>
+  {/* Decorative Divider */}
+  <div className="mt-5 flex items-center justify-center lg:justify-start gap-3">
+    <span className="w-14 h-[2px] bg-[#39B54A]" />
+    <span className="w-3 h-3 rounded-full bg-[#1F7A36]" />
+    <span className="w-6 h-[2px] bg-[#8EE6A1]" />
+  </div>
 
-          <p className="mt-4 text-[#6B7280] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-            In India, organizations are encouraged to contribute toward key CSR
-            initiatives such as education, preventive healthcare, gender
-            equality, environmental sustainability, and rural development.
-            Nassa Elevators actively supports these initiatives through
-            responsible business practices.
-          </p>
+  {/* Content Card */}
+  <div className="mt-8 bg-white/70 backdrop-blur-sm border border-[#E3EFE7] rounded-2xl p-6 md:p-8 shadow-sm max-w-xl mx-auto lg:mx-0">
 
-          <p className="mt-4 text-[#6B7280] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-            We are committed to maintaining a safe and healthy workplace,
-            operating in an environmentally responsible manner, and delivering
-            products and services that contribute positively to society.
-          </p>
+    <p className="text-[#6B7280] text-base md:text-lg leading-relaxed">
+      Corporate Social Responsibility and the principle of giving back to
+      society are fundamental to{" "}
+      <span className="font-semibold text-[#1F7A36]">
+        Nassa Elevators’ culture and core values
+      </span>
+      . These values guide our approach toward inclusive growth and long-term
+      sustainability.
+    </p>
 
-          {/* CTA */}
-          <div className="mt-7 flex justify-center lg:justify-start">
-            <Link
-              to="/contact"
-              className="
-                px-10 py-3 rounded-full text-sm md:text-base font-semibold
-                text-white bg-[#39B54A]
-                hover:bg-[#2FA84F]
-                transition-all duration-300
-              "
-            >
-              Partner With Us
-            </Link>
-          </div>
-        </div>
+    {/* Highlight Points */}
+    <div className="mt-6 space-y-4">
+
+      <div className="flex items-start gap-3">
+        <FaHandsHelping className="mt-1 text-[#39B54A]" />
+        <p className="text-[#6B7280] text-base md:text-lg leading-relaxed">
+          We actively support national CSR priorities including education,
+          preventive healthcare, gender equality, environmental sustainability,
+          and rural development through responsible business practices.
+        </p>
+      </div>
+
+      <div className="flex items-start gap-3">
+        <FaLeaf className="mt-1 text-[#39B54A]" />
+        <p className="text-[#6B7280] text-base md:text-lg leading-relaxed">
+          Our commitment extends to maintaining safe workplaces, minimizing
+          environmental impact, and delivering solutions that create positive
+          social value.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  
+</div>
+
       </motion.div>
 
       {/* ================= IMAGE GALLERY ================= */}
       <div className="relative mt-16 max-w-7xl mx-auto">
 
-        <h3 className="text-center text-2xl md:text-3xl font-medium text-[#1F7A36] mb-8">
-          Our Commitment in Action
-        </h3>
+        <div className="mb-12 text-center flex flex-col items-center">
+  {/* Top Line */}
+  <div className="w-20 h-[2px] bg-[#8EE6A1] mb-3" />
+
+  {/* Main Heading */}
+  <h3 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#1F7A36] leading-snug">
+    Turning Purpose into Impact Through
+    <span className="text-[#39B54A]"> Meaningful Action</span>
+  </h3>
+
+  {/* Subtitle */}
+  <p className="mt-3 max-w-2xl text-sm md:text-base text-gray-600 leading-relaxed">
+    Our supported initiatives reflect a deep commitment to people, progress,
+    and responsibility — translating values into real-world change.
+  </p>
+
+  {/* Bottom Decorative Lines */}
+  <div className="mt-6 flex items-center gap-3">
+    <span className="w-10 h-[2px] bg-[#39B54A]" />
+    <span className="w-4 h-4 rounded-full bg-[#1F7A36]" />
+    <span className="w-10 h-[2px] bg-[#39B54A]" />
+  </div>
+</div>
+
 
         {/* Desktop Grid */}
         <div className="hidden md:grid grid-cols-4 gap-6">
