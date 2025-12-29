@@ -1,0 +1,12 @@
+| Category       | Usage                                            | Color Name         | Hex Code  |
+| -------------- | ------------------------------------------------ | ------------------ | --------- |
+| **Brand**      | Primary brand color (logo, buttons, highlights)  | Nassa Green        | `#39B54A` |
+| **Brand**      | Dark brand color (headings, footer, navbar text) | Deep Nassa Green   | `#1F7A36` |
+| **Brand**      | Light brand shade (icons, badges, subtle UI)     | Soft Green         | `#8EE6A1` |
+| **Brand**      | Hover / active state                             | Emerald Green      | `#2FA84F` |
+| **Background** | Main website background                          | Pure White         | `#FFFFFF` |
+| **Background** | Alternate section background                     | Off White Green    | `#F7FAF8` |
+| **UI**         | Borders, dividers, card outlines                 | Light Green Gray   | `#E3EFE7` |
+| **Text**       | Primary text color                               | Charcoal Black     | `#1F2933` |
+| **Text**       | Secondary / muted text                           | Soft Gray          | `#6B7280` |
+| **Accent**     | Highlighted text, stats, icons                   | Brand Green Accent | `#39B54A` |
