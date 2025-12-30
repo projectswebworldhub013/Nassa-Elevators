@@ -20,7 +20,7 @@ const COLORS = {
 const OverviewHero = () => {
   return (
     <section
-      className="relative h-[70vh] w-full bg-center bg-cover flex items-center justify-center"
+      className="relative h-[85vh] w-full bg-center bg-cover flex items-center justify-center"
       style={{
         backgroundImage: `url(${bg})`,
       }}

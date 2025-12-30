@@ -70,7 +70,7 @@ const fadeUp = {
 
 const MilestonesSection = () => {
   return (
-    <section className="relative bg-[#F7FAF8] py-16 px-4 md:px-10 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#f9f9f9] to-[#eef2ef] py-16 px-4 md:px-10 overflow-hidden">
 
       {/* Subtle Divider Lines */}
       <div className="absolute inset-0 pointer-events-none">

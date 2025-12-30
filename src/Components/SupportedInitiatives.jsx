@@ -22,7 +22,7 @@ const fadeUp = {
 
 export default function SupportedInitiatives() {
   return (
-    <section className="relative bg-[#F7FAF8] py-16 px-6 md:px-12 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-[#f9f9f9] to-[#eef2ef] py-16 px-6 md:px-12 overflow-hidden">
 
       
 

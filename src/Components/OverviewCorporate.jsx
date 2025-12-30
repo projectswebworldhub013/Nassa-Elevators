@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function OverviewCorporate() {
   return (
-    <section className="relative w-full bg-[#ffffff] py-20 px-6 md:px-16">
+    <section className="relative w-full bg-gradient-to-br from-[#f9f9f9] to-[#eef2ef] py-20 px-6 md:px-16">
       <div className="relative z-10 max-w-7xl mx-auto text-center">
 
         {/* Section Heading */}
