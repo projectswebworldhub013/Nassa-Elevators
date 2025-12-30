@@ -9,6 +9,8 @@ import MileStones from "./Pages/MileStones";
 import Innovation from "./Pages/Innovation";
 import Insights from "./Pages/Insights";
 import Management from "./Pages/Management";
+import ServiceDetail from "./Pages/ServiceDetail";
+import SingleModernization from "./Pages/SingleModernization";
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
         <Route path="/about/innovations" element={<Innovation/>}/>
         <Route path="/about/insights" element={<Insights/>}/>
         <Route path="/about/management-address" element={<Management/>}/>
+        <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
+        <Route path="/modernization/:slug" element={<SingleModernization />}
+/>
       </Routes>
     <Footer/>
     </>
