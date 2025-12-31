@@ -5,6 +5,7 @@ import OurStory from '../Components/OurStory'
 import HowItWorks from '../Components/HowItWorks'
 import MovingServices from '../Components/ElevatorServices'
 import TeamSection from '../Components/TeamSection'
+import SurfaceCollections from '../Components/SurfaceCollectinons'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HowItWorks/>
       <MovingServices/>
       <TeamSection/>
+      <SurfaceCollections/>
       <WhyChooseUs/>
       
     </div>

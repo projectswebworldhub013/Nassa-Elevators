@@ -87,15 +87,37 @@ export default function SurfaceCollections() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1F2933]">
-            NASSA <span className="text-[#39B54A]">Catalogues</span>
-          </h2>
-          <p className="text-[#6B7280] mt-2 max-w-md">
-            Download detailed product catalogues showcasing design,
-            technology, and engineering excellence.
-          </p>
-        </div>
+        <div className="mb-14 relative">
+
+  {/* Decorative Top Line */}
+  <div className="flex items-center gap-4 mb-4">
+    <span className="h-[2px] w-10 bg-[#8EE6A1]" />
+    <span className="h-[2px] w-20 bg-[#39B54A]" />
+    <span className="h-[2px] w-10 bg-[#8EE6A1]" />
+  </div>
+
+  {/* Main Heading */}
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-[#1F2933] max-w-4xl">
+    Explore Our Complete Range of{" "}
+    <span className="text-[#39B54A]">Elevator Catalogues</span> &
+    Technical Showcases
+  </h2>
+
+  {/* Subtitle */}
+  <p className="mt-4 text-sm sm:text-base md:text-lg text-[#6B7280] max-w-2xl leading-relaxed">
+    Download professionally curated catalogues featuring advanced elevator
+    technologies, premium interiors, ceiling designs, flooring solutions,
+    and engineering excellence from NASSA Elevators.
+  </p>
+
+  {/* Bottom Accent Line */}
+  <div className="mt-6 flex items-center gap-3">
+    <span className="h-[3px] w-14 rounded-full bg-[#39B54A]" />
+    <span className="h-[3px] w-6 rounded-full bg-[#8EE6A1]" />
+  </div>
+
+</div>
+
 
         {/* SLIDER WRAPPER */}
         <div className="relative">
@@ -132,9 +154,9 @@ export default function SurfaceCollections() {
             {collections.map((item, index) => (
               <div
                 key={index}
-                className="min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] snap-start"
+                className="min-w-[100%] sm:min-w-[50%] lg:min-w-[31.7%] snap-start"
               >
-                <div className="relative h-[380px] rounded-2xl overflow-hidden bg-white
+                <div className="relative h-[420px] rounded-2xl overflow-hidden bg-white
                                 border border-[#E3EFE7] group shadow-sm hover:shadow-lg transition">
 
                   <img
