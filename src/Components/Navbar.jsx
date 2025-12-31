@@ -165,7 +165,7 @@ const navClass = (path) =>
         {elevators.map((e) => (
           <Link
             key={e}
-            to={`/products/elevators/${e.toLowerCase().replace(/\s+/g, "-")}`}
+            to={`/products/${e.toLowerCase().replace(/\s+/g, "-")}`}
             className="block text-sm text-[#1F2933] hover:text-[#39B54A]"
           >
             {e}

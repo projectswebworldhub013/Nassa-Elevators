@@ -1,8 +1,8 @@
 // ================== IMAGE IMPORTS ==================
-import gearedImg from "../assets/images/s5.jpg";
-import gearlessImg from "../assets/images/s5.jpg";
-import hydraulicImg from "../assets/images/s5.jpg";
-import escalatorImg from "../assets/images/s5.jpg";
+import gearedImg from "../assets/images/geared.jpg";
+import gearlessImg from "../assets/images/high-rise.jpg";
+import hydraulicImg from "../assets/images/hydraulic.jpg";
+import escalatorImg from "../assets/images/modern.jpg";
 
 // ================== ICON IMPORTS ==================
 import {
@@ -27,11 +27,11 @@ const modernizationData = [
     about: [
       {
         icon: <FaCogs />,
-        text: "Replacement of outdated geared machines with high-performance drive systems.",
+        text: "Replacement of outdated machines with high-performance systems.",
       },
       {
         icon: <FaBolt />,
-        text: "Improved energy efficiency through optimized motor and control technology.",
+        text: "Enhanced energy efficiency using advanced motor controls.",
       },
       {
         icon: <FaShieldAlt />,
