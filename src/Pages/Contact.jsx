@@ -18,6 +18,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import bgContact from "../assets/images/modern.jpg";
 import MapSection from "../Components/MapSection";
 import ContactHero from '../Components/ContactHero'
+import SurfaceCollections from "../Components/SurfaceCollectinons";
 const ContactPage = () => {
   return (
     <>
@@ -234,6 +235,7 @@ const ContactPage = () => {
 
       {/* MAP */}
       <MapSection />
+      <SurfaceCollections/>
     </>
   );
 };
