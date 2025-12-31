@@ -14,13 +14,13 @@ import {
 } from "react-icons/fa";
 
 // IMAGES
-import passengerElevator from "../assets/images/s5.jpg";
-import homeElevator from "../assets/images/s5.jpg";
-import dumbwaiterElevator from "../assets/images/s5.jpg";
-import stretcherElevator from "../assets/images/s5.jpg";
-import goodsElevator from "../assets/images/s5.jpg";
-import automobileElevator from "../assets/images/s5.jpg";
-import observationElevator from "../assets/images/s5.jpg";
+import passengerElevator from "../assets/images/p1.jpg";
+import homeElevator from "../assets/images/p2.jpg";
+import dumbwaiterElevator from "../assets/images/p3.jpg";
+import stretcherElevator from "../assets/images/p4.jpg";
+import goodsElevator from "../assets/images/p5.jpg";
+import automobileElevator from "../assets/images/p6.jpg";
+import observationElevator from "../assets/images/p7.jpg";
 
 export const productsData = [
   {

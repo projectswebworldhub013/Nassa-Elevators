@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 import { productsData } from "../data/productsData";
+import CTASection from "../Components/CTASection";
 
 /* ================= COLORS ================= */
 const COLORS = {
@@ -57,10 +58,10 @@ const SingleProduct = () => {
           transition={{ duration: 0.9 }}
           className="relative z-10 p-8 md:p-16 max-w-4xl"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-4xl md:text-6xl font-semibold text-white leading-tight">
             {product.title}
           </h1>
-          <p className="mt-4 text-[#E5E7EB] text-lg md:text-xl leading-relaxed">
+          <p className="mt-2 text-[#E5E7EB] text-md md:text-lg leading-relaxed">
             {product.shortDesc}
           </p>
         </motion.div>
@@ -70,10 +71,10 @@ const SingleProduct = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 space-y-16">
         {/* Back Button */}
         <Link
-          to="/products"
+          to="/"
           className="inline-flex items-center gap-2 font-semibold text-[#1F7A36] hover:text-[#2FA84F] transition"
         >
-          <FaArrowLeft /> Back to Products
+          <FaArrowLeft /> Back to Home
         </Link>
 
         {/* ================= ABOUT ================= */}
@@ -142,33 +143,7 @@ const SingleProduct = () => {
         </div>
 
         {/* ================= CONTACT ================= */}
-        <div className="text-center bg-[#F7FAF8] py-14 rounded-3xl border border-[#E3EFE7]">
-          <h2 className="text-3xl font-bold text-[#1F2933] mb-4">
-            Need This Elevator for Your Project?
-          </h2>
-
-          <p className="text-[#6B7280] mb-10 max-w-3xl mx-auto">
-            Contact our expert team for consultations, technical
-            details, or customized elevator solutions tailored to
-            your building requirements.
-          </p>
-
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a
-              href="tel:+918686180036"
-              className="flex items-center justify-center gap-2 bg-[#39B54A] hover:bg-[#2FA84F] text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition font-semibold"
-            >
-              <FaPhoneAlt /> +91 86861 80036
-            </a>
-
-            <a
-              href="mailto:info@nassaelevators.in"
-              className="flex items-center justify-center gap-2 border-2 border-[#39B54A] text-[#39B54A] hover:bg-[#39B54A] hover:text-white px-8 py-3 rounded-full shadow-lg transition font-semibold"
-            >
-              <FaEnvelope /> info@nassaelevators.in
-            </a>
-          </div>
-        </div>
+        <CTASection/>
       </div>
     </section>
   );

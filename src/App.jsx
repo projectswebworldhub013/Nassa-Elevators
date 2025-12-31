@@ -13,6 +13,7 @@ import SingleModernization from "./Pages/SingleModernization";
 import Contact from "./Pages/Contact";
 import ScrollToTop from './Components/ScrollToTop'
 import SingleProduct from "./Pages/SIngleProduct";
+import Career from "./Pages/Career";
 function App() {
 
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/modernization/:slug" element={<SingleModernization />}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/products/:slug" element={<SingleProduct />} />
+        <Route path="/careers" element={<Career/>}/>
       </Routes>
     <Footer/>
     </>
