@@ -9,7 +9,12 @@ import gearlessPdf from "../assets/gearless.pdf";
 import profilePdf from "../assets/profile.pdf";
 
 // Images
-import s5 from "../assets/images/s5.jpg";
+import img1 from "../assets/images/pdf1.png";
+import img2 from "../assets/images/pdf2.png";
+import img3 from "../assets/images/pdf3.png";
+import img4 from "../assets/images/pdf4.png";
+import img5 from "../assets/images/pdf5.png";
+
 
 const collections = [
   {
@@ -17,7 +22,7 @@ const collections = [
     subtitle: "Complete NASSA Elevator Range",
     description:
       "Explore our complete portfolio of elevators, interiors, finishes, and modern vertical mobility solutions.",
-    image: s5,
+    image: img1,
     pdf: cataloguePdf,
   },
   {
@@ -25,7 +30,7 @@ const collections = [
     subtitle: "Luxury Elevator Ceilings",
     description:
       "Premium ceiling panels crafted with stainless steel, glass, lighting patterns, and designer finishes.",
-    image: s5,
+    image: img2,
     pdf: ceilingPdf,
   },
   {
@@ -33,7 +38,7 @@ const collections = [
     subtitle: "Durable Elevator Flooring",
     description:
       "High-strength flooring options including marble, granite, PVC, and anti-skid designer surfaces.",
-    image: s5,
+    image: img3,
     pdf: flooringPdf,
   },
   {
@@ -41,7 +46,7 @@ const collections = [
     subtitle: "Advanced Drive Technology",
     description:
       "Energy-efficient gearless elevator systems ensuring silent operation, smooth travel, and reliability.",
-    image: s5,
+    image: img4,
     pdf: gearlessPdf,
   },
   {
@@ -49,7 +54,7 @@ const collections = [
     subtitle: "About NASSA Elevators",
     description:
       "Discover our journey, manufacturing expertise, certifications, and commitment to safety and innovation.",
-    image: s5,
+    image: img5,
     pdf: profilePdf,
   },
 ];
