@@ -1,8 +1,8 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import aboutImg from "../assets/images/s5.jpg";
-import valuesImg from "../assets/images/s5.jpg";
-import bgImg from "../assets/images/bg5.jpg";
+import aboutImg from "../assets/images/about1.jpg";
+import valuesImg from "../assets/images/about3.jpg";
+import bgImg from "../assets/images/hero/h2.jpg";
 import { Link } from "react-router-dom";
 import {
   FaIndustry,
@@ -26,7 +26,7 @@ const OurStory = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/70" />
+      <div className="absolute inset-0 bg-white/80" />
 
       {/* CONTENT */}
       <div className="relative z-10 text-[#1F2933] py-16 px-6 md:px-16 font-sans">
@@ -42,7 +42,7 @@ const OurStory = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-[#1F7A36]">
               About Nassa Elevators
             </h1>
-            <p className="mt-4 text-base md:text-lg max-w-3xl mx-auto text-[#6B7280]">
+            <p className="mt-4 text-base md:text-lg max-w-3xl mx-auto text-[#000000]">
               Since <strong>1984</strong>, Nassa Elevators has been shaping
               skylines with safe, reliable, and innovative vertical transportation
               solutions trusted across India.
@@ -62,7 +62,7 @@ const OurStory = () => {
                 Our Journey
               </h2>
 
-              <p className="text-base leading-relaxed">
+              <p className="text-base leading-relaxed text-black">
                 Founded in 1984, Nassa Elevators began with a simple goal — to
                 build elevators that people could trust every single day. Over
                 the years, we have grown into a comprehensive elevator solutions

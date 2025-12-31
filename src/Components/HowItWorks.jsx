@@ -49,7 +49,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="relative py-20 overflow-hidden shadow-black shadow-xl">
+    <section className="bg-gradient-to-br from-[#f9f9f9] to-[#eef2ef] relative py-20 overflow-hidden shadow-black shadow-xl">
       
 
       <div className="relative max-w-7xl mx-auto px-4 z-10">
@@ -106,7 +106,7 @@ const HowItWorks = () => {
 
               {/* Button */}
               <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                <Link to="/about">
+                <Link to="/contact">
                   <button className="w-full rounded-xl bg-[#1F7A36] text-white text-sm py-2 hover:bg-[#16632C] transition shadow-md">
                     Learn More
                   </button>

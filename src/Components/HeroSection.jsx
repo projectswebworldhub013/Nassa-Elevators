@@ -5,10 +5,10 @@ import { PhoneCall, Building } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 
-import t1 from "../assets/images/hero/h1.avif";
-import t2 from "../assets/images/hero/h1.avif";
-import t3 from "../assets/images/hero/h1.avif";
-import t4 from "../assets/images/hero/h1.avif";
+import t1 from "../assets/images/hero/h1.jpg";
+import t2 from "../assets/images/hero/h2.jpg";
+import t3 from "../assets/images/hero/h3.jpg";
+// import t4 from "../assets/images/hero/h1.avif";
 
 const slides = [
   {
@@ -22,10 +22,6 @@ const slides = [
   {
     image: t3,
     tagline: "Safe • Efficient • Reliable Elevators",
-  },
-  {
-    image: t4,
-    tagline: "Innovation That Moves You Up",
   },
 ];
 
@@ -64,7 +60,7 @@ export default function HeroSection() {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/25 to-black/25 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/65 to-black/45 z-0" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center px-6 md:px-10 max-w-4xl mx-auto">
@@ -79,7 +75,7 @@ export default function HeroSection() {
         </motion.p>
 
         {/* Main Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight text-white drop-shadow-md">
+        <h1 className="text-4xl md:text-6xl font-semi-bold mb-3 leading-tight text-white drop-shadow-md">
           Nassa Elevators
         </h1>
 
