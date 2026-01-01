@@ -14,6 +14,7 @@ import Contact from "./Pages/Contact";
 import ScrollToTop from './Components/ScrollToTop'
 import SingleProduct from "./Pages/SIngleProduct";
 import Career from "./Pages/Career";
+import Escalator from "./Pages/Escalator";
 function App() {
 
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/products/:slug" element={<SingleProduct />} />
         <Route path="/careers" element={<Career/>}/>
+        <Route path="/products/escalators" element={<Escalator/>}/>
       </Routes>
     <Footer/>
     </>
